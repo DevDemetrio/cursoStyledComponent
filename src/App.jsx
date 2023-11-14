@@ -1,17 +1,25 @@
 import { styled } from "styled-components";
 import EstilosGlobais from "./components/EstilosGlobais";
-
+import Cabecalho from "./components/Cabecalho";
+import BarraLateral from "./components/BarraLateral";
 const FundoGradiente = styled.div`
-  background-color: green;
+  background: linear-gradient(
+    174.61deg,
+    #041833 4.16%,
+    #04244f 48%,
+    #154580 9676%
+  );
+
+  width: 100%;
+  min-height: 100vh;
 `;
 function App() {
   return (
-    <>
-      <FundoGradiente>
-        <EstilosGlobais />
-        <h1>Teste</h1>
-      </FundoGradiente>
-    </>
+    <FundoGradiente>
+      <EstilosGlobais />
+      <Cabecalho />
+      <BarraLateral />
+    </FundoGradiente>
   );
 }
 
