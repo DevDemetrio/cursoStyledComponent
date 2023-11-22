@@ -20,6 +20,10 @@ const EstilosGlobais = createGlobalStyle`
   -webkit-text-size-adjust: 100%;
   font-family: GandhiSansRegular;
 }
+figure, figcaption, footer, h3{
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   min-height: 100vh;
